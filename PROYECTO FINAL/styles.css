@@ -47,7 +47,7 @@ li:hover{
 }
 
 img{
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
@@ -64,7 +64,7 @@ img{
 .titulo-cajita{
   text-decoration: underline;
   color: white;
-  text-shadow: #2b3d50 3px 1px;
+  text-shadow: #244467 2px 1px;
   
 }
 
@@ -85,12 +85,11 @@ img{
 .consultorias {
   background: linear-gradient(0deg, var(--morado), #ffffff);
 }
-/* tablet */
-@media screen and (max-width: 468px){
+/* tablet mostrarv dos columnas */
+@media screen and (max-width: 480px){
   .contenedor{
     flex-direction: column;
     flex-wrap: wrap;
-
   }
 
   .cajita{
@@ -101,7 +100,7 @@ img{
 
 
 /* computadora */
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
   .contenedor{
     flex-direction: row;
   }
