@@ -56,7 +56,8 @@ a:hover{
 
 .grid{
   display: grid;
-  row-gap: 10px}
+  row-gap: 10px;
+}
 
 .campo{ 
   display: flex; 
@@ -64,7 +65,7 @@ a:hover{
   padding: 0 5px; }
 
 
-@media (min-width: 768px) {
+@media (min-width: 798px) {
   section {
     flex: 0 0 66.66%;
   }
@@ -74,7 +75,7 @@ a:hover{
   }
 
   .grid{
-    grid-template-columns: repeat(6, 16.66%);
+    grid-template-columns: repeat(6, 16%);
   }
 
   .nombre{ grid-column: 1 / 4; }
