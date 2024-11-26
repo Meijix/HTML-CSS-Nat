@@ -75,7 +75,7 @@ a:hover{
   }
 
   .grid{
-    grid-template-columns: repeat(6, 16%);
+    grid-template-columns: repeat(6, 16.66%);
   }
 
   .nombre{ grid-column: 1 / 4; }
