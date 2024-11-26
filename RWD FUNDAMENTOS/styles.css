@@ -1,21 +1,23 @@
 :root{
   --azulclaro: #7ee8fd;
   --azulmarino: #001f3f;
+  --moradooscuro: #9e19dcef;
   --grande: 1rem;
   --mediano: 0.8rem;
 }
 
-
-div,
-header,
-nav,
-main,
-footer,
-section,
-article,
-aside,
 ul{
-  padding: 0 .5rem; border: 1px solid rgb(245, 241, 241);
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+li{
+  padding: 0.5rem;
+  background: var(--azulclaro);
+  color: var(--azulmarino);
+  border-radius: 0.5rem;
 }
 
 body{
@@ -31,8 +33,33 @@ section{
   background: #d2a8fd;
   color:var(--azulmarino);
 }
-article{ background: #9005a57a}
+article{ background:var(--moradooscuro);
+}
 aside{ 
   background: var(--azulclaro);
   color:var(--azulmarino)
+}
+
+
+a:hover{
+  color: var(--moradooscuro);
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section, aside {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 798px) {
+  section {
+    flex: 0 0 66.66%;
+  }
+  
+  aside {
+    flex: 0 0 33.33%;
+  }
 }
