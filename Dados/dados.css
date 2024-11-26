@@ -5,10 +5,7 @@
     flex-wrap: wrap;
   
   }
-   p{ font-family: arial;
-     font-wwigth: bold;
-     text-align: center;
-      }
+
   .contenedor .cara1,
   .contenedor .cara2,
   .contenedor .cara3,
@@ -38,7 +35,7 @@
   
       }
       .contenedor .cara1{
-         justify: center;
+         justify-content: center;
        
       }
   
@@ -81,7 +78,7 @@
       }
   
   .cara5 .punto:nth-child(3){
-    justify: center;
+    justify-content: center;
     position: absolute;
     
   }
