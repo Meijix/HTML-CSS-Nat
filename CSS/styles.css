@@ -1,3 +1,11 @@
+:root{
+  --azulclaro: #7ee3fd;
+  --azulmarino: #001f3f;
+  --grande: 1rem;
+  --mediano: 0.8rem;
+}
+
+
 div,
 header,
 nav,
@@ -7,9 +15,24 @@ section,
 article,
 aside,
 ul{
-  padding: 0 .5rem; border: 1px solid gray;
+  padding: 0 .5rem; border: 1px solid rgb(245, 241, 241);
 }
 
-section{ background: #ffffb2}
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: var(--grande);
+  font-weight: bold;
+  background: var(--azulmarino);
+  color: var(--azulclaro);
+}
+
+section{ 
+  font-size: var(--mediano);
+  background: #ffffb2;
+  color:var(--azulmarino);
+}
 article{ background: #ffa5007a}
-aside{ background: #b7ffff}
+aside{ 
+  background: #50eabf;
+  color:var(--azulmarino)
+}
