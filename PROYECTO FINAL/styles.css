@@ -8,6 +8,11 @@
   --mediano: 0.8rem;
 }
 
+.logo{
+  width: 150px;
+  height: auto;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -26,10 +31,13 @@ li{
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+  color: var(--azulmarino);
+  text-transform: bold;
 }
 
 li:hover{
   background-color: #a4c1ff;
+  text-transform: capitalize;
 }
 
 .contenedor{
@@ -39,37 +47,63 @@ li:hover{
 }
 
 img{
-  width: 20%;
+  width: 50%;
   height: auto;
 }
 
 .cajita{
+  flex: 1 1 100%;
   border-radius: 30px;
   margin: 10px;
   padding: 10px;
   align-content: center;
   text-align: center;
+  
 }
 
 .titulo-cajita{
   text-decoration: underline;
   color: white;
   text-shadow: #2b3d50 3px 1px;
+  
 }
 
 
 .sistemas {
-  background-color: var(--azulclaro);
+  background: linear-gradient(0deg, var(--azulclaro), #ffffff);
+
 }
 
 .aplicaciones {
-  background-color: var(--naranja);
+  background: linear-gradient(0deg, var(--naranja), #ffffff);
 }
 
 .web {
-  background-color: var(--verde);
+  background: linear-gradient(0deg, var(--verde), #ffffff);
 }
 
 .consultorias {
-  background-color: var(--morado);
+  background: linear-gradient(0deg, var(--morado), #ffffff);
+}
+/* tablet */
+@media screen and (max-width: 468px){
+  .contenedor{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .cajita{
+    flex: 1 1 50%;
+  }
+  
+}
+
+
+/* computadora */
+@media screen and (min-width: 769px){
+  .contenedor{
+    flex-direction: row;
+  }
+  
 }
