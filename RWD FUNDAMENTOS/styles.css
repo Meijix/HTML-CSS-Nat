@@ -1,7 +1,9 @@
 :root{
-  --azulclaro: #7ee8fd;
-  --azulmarino: #001f3f;
-  --moradooscuro: #620a8bef;
+  --color-sec: #e3a8da;
+  --color-sec-alt: #cb7ef2;
+  --fondo: #2e1955;
+  --moradooscuro: #400a4c;
+  --letras:rgb(248, 221, 253);
   --grande: 1rem;
   --mediano: 0.8rem;
 }
@@ -15,8 +17,8 @@ ul{
 
 li{
   padding: 0.5rem;
-  background: var(--azulclaro);
-  color: var(--azulmarino);
+  background: var(--color-sec);
+  color: var(--fondo);
   border-radius: 0.5rem;
 }
 
@@ -24,42 +26,51 @@ body{
   font-family: 'Arial', sans-serif;
   font-size: var(--grande);
   font-weight: bold;
-  background: var(--azulmarino);
-  color: var(--azulclaro);
+  background: var(--fondo);
+  color: var(--color-sec);
+  padding: 15px;
 }
 
 section{ 
   font-size: var(--mediano);
-  background: #d2a8fd;
-  color:var(--azulmarino);
+  background: var(--color-sec-alt);
+  color:var(--fondo);
 }
 article{ background:var(--moradooscuro);
+  color:var(--letras);
+  padding: 15px;
 }
 aside{ 
-  background: var(--azulclaro);
-  color:var(--azulmarino)
+  background: var(--color-sec);
+  color:var(--fondo);
 }
 
 
 a:hover{
-  color: var(--moradooscuro);
+  color: var(--letras);
+}
+
+li:hover{
+  background-color: var(--color-sec-alt);
 }
 
 .contenedor {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 section, aside {
   flex: 1 1 100%;
+  padding: 15px;
 }
 
 @media (min-width: 798px) {
   section {
-    flex: 0 0 66.66%;
+    flex: 1 1 60%;
   }
   
   aside {
-    flex: 0 0 33.33%;
+    flex: 1 1 33.33%;
   }
 }
