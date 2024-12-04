@@ -29,28 +29,37 @@
       <h3>Encabezado de articulo 1</h3>
 
       <form action="">
-        <fieldset>
+        <fieldset class="grid">
           <legend>Proporciona tus datos</legend>
           <p>Los campos marcados con * son obligatorios</p>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre"><br>
 
-          <label for="email">Correo electronico:</label>
-          <input type="email" id="email"><br>
+          <div class="campo nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+          </div>
 
-          <span>Procedencia:</span>
-          <br>
-          <input type="radio" name="procedencia" value="mex" />
-          <label for="huey">Mexicano</label><br>
-          <input type="radio" name="procedencia" value="ext" />
-          <label for="huey">Extranjero</label><br>
-          <label for="sabor">Sabor favorito:</label><br>
-          <select id="sabor">
-            <option value="">-Elija una opcion-</option>
-            <option value="">Vainilla</option>
-            <option value="">Chocolate</option>
-            <option value="">Fresa</option>
-          </select>
+          <div class="campo correo">
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="campo procede">
+            <span>Procedencia:</span>
+            <input type="radio" name="procedencia" value="mex" />
+            <label for="huey">Mexicano</label><br>
+            <input type="radio" name="procedencia" value="ext" />
+            <label for="huey">Extranjero</label>
+          </div>
+
+          <div class="campo sabor">
+            <label for="sabor">Sabor favorito:</label>
+            <select id="sabor">
+              <option value="">-Elija una opcion-</option>
+              <option value="">Vainilla</option>
+              <option value="">Chocolate</option>
+              <option value="">Fresa</option>
+            </select>
+          </div>
         </fieldset>
       </form>
 
