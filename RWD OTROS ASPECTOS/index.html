@@ -27,36 +27,43 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis totam debitis accusantium hic unde facilis doloribus ad sequi excepturi quidem dicta laboriosam numquam maiores minima quibusdam tenetur iusto, in deleniti.</p>
     <article>
       <h3>Encabezado de articulo 1</h3>
-      <p>Parrafo en articulo 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptate eius atque quibusdam architecto accusamus enim maiores nisi libero similique natus, velit sunt voluptatum reprehenderit earum sint asperiores minima vero?</p>
+
       <form action="">
-        <fieldset>
+        <fieldset class="grid">
           <legend>Proporciona tus datos</legend>
-          <p>Los campos marcados con * son obligatorios</p>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre"><br>
 
-          <label for="email">Correo electronico:</label>
-          <input type="email" id="email"><br>
+          <div class="campo nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+          </div>
 
-          <span>Procedencia:</span>
-          <br>
-          <input type="radio" name="procedencia" value="mex" />
-          <label for="huey">Mexicano</label><br>
-          <input type="radio" name="procedencia" value="ext" />
-          <label for="huey">Extranjero</label><br>
-          <label for="sabor">Sabor favorito:</label><br>
-          <select id="sabor">
-            <option value="">-Elija una opcion-</option>
-            <option value="">Vainilla</option>
-            <option value="">Chocolate</option>
-            <option value="">Fresa</option>
-          </select>
+          <div class="campo correo">
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="campo procede">
+            <span>Procedencia:</span>
+            <input type="radio" id="mex" name="procedencia" value="mex" />
+            <label for="mex">Mexicano</label>
+            <input type="radio" id="ext" name="procedencia" value="ext" />
+            <label for="ext">Extranjero</label>
+          </div>
+
+          <div class="campo sabor">
+            <label for="sabor">Sabor favorito:</label>
+            <select id="sabor">
+              <option value="">-Elija una opcion-</option>
+              <option value="">Vainilla</option>
+              <option value="">Chocolate</option>
+              <option value="">Fresa</option>
+            </select>
+          </div>
         </fieldset>
       </form>
 
       <p>Parrafo en articulo 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptate eius atque quibusdam architecto accusamus enim maiores nisi libero similique natus, velit sunt voluptatum reprehenderit earum sint asperiores minima vero?</p>
     </article>
-    <P>Parrafo en seccion 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officia iure quod necessitatibus praesentium totam delectus rerum perspiciatis harum deserunt cum, at debitis eum veniam tempora! Perspiciatis sit fugit ab.Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
   </section>
   <aside>
     <h3>Encabezado en lateral</h3>
