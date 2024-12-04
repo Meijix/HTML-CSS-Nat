@@ -39,6 +39,7 @@ section {
 
 article {
   background: var(--moradooscuro);
+  padding: 15px;
 }
 
 aside {
@@ -76,11 +77,11 @@ a:hover {
   }
 
   section {
-    flex: 0 0 66.66%;
+    flex: 1 1 66.66%;
   }
 
   aside {
-    flex: 0 0 33.33%;
+    flex: 1 1 33.33%;
   }
 
   .grid {
